@@ -7,7 +7,7 @@
     <title>contact us</title>
     <link rel="shortcut icon" type="x-icon" href="https://res.cloudinary.com/dgrm3sqpp/image/upload/v1675782525/TSWSICON.PNG_d9ec33.jpg">
     
-    <link rel="stylesheet" href="contactuspage.css">
+    <link rel="stylesheet" href="index2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
     <style>
@@ -24,14 +24,14 @@ section{
     justify-content:center;
     align-items:center;
     min-height: 100vh;
-    background: #ea1538;
+    background: #efebed;
 
 }
 section::before
 {
     content: "";
     position : absolute;
-    top: 0;
+    top: 70px;
     left: 0;
     width: 50%;
     height: 100%;
@@ -49,13 +49,15 @@ section::before
 }
 .maincontainer .contactinfo
 {
-    position: absolute;
+    /*position: absolute;
+     height:calc(100% - 120px);*/
+
     top: 40px;
     width:350px;
-    height:calc(100% - 120px);
-    background: #ea1538;
+   
+    background: #d6c5c8;
     z-index: 1;
-    padding: 20px;
+    padding: 70px;
     display: flex;
     justify-content:center;
     flex-direction:column;
@@ -281,6 +283,96 @@ section::before
     color: #ffffff;
 }
 
+/* -----------------footer------------  */
+
+.footer {
+    background-color: #24262d;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+/*
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+*/
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
 
 
 /* RESPONSIVE FOR 1200 990 600  */
@@ -377,6 +469,26 @@ section::before
 
 </head>
 <body>
+    <div class="div-of-nav">
+        <nav class="navs1 navbar-fixed-top">
+          <div class="new-navs1">
+            <a href="index.css"></a>
+            <h2 class="span1 logo12" style="color: #000;">Medicon</h2>
+          </div>
+          <div class="navhide">
+            <ul class="ul-nav1">
+              <li class="li1"><button class="navbtn"><a href="INDEX2.HTML" class="ul-content1">Home</a></button></li>
+              <li class="li1"><button class="navbtn"><a href="aboutus.html" class="ul-content1">About Us</a></button></li>
+              <li class="li1"><button class="navbtn"><a href="contactus.html" class="ul-content1">Contact Us</a></button></li>
+              <button class="button1"><span><a class="nav-donate"
+                    href="Login.html">Login</a></span></button>
+            </ul>
+          </div>
+    
+          <img onclick="show_hide()" src="burger.jpg" alt="hamburger" class="nav-hamburger">
+        </nav>
+      </div>
+      <hr>
     <section>
         <div class="maincontainer">
 
@@ -452,4 +564,42 @@ section::before
 
     
 </body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment option</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="underline"></div>
+                <div class="social">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
 </html>
